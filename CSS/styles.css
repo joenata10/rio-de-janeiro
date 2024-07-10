@@ -1,0 +1,1261 @@
+/* ------SELECTOR UNIVERSAL------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 100px;
+    /* border: 1px solid black; */
+}
+
+/* TIPOGRAFIA */
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* TAMAÑOS GENERALES */
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 60px;
+    text-decoration: underline dotted;
+}
+
+h3 {
+    font-size: 45px;
+}
+
+/* -----------------HEADER---------------- */
+
+/* -------------BARRA DE NAVEGACION----------------*/
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(rgb(9, 79, 100), rgb(175, 175, 9));
+    height: 100px;
+    z-index: 9999;
+}
+
+/* IMAGEN DE LA BARRA DE NAVEGACION */
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* SECCIONES DE LA BARRA DE NAVEGACION */
+.navegacion a.active {
+    color: rgb(103, 236, 103);
+    border-bottom: 4px solid rgb(103, 236, 103);
+}
+
+.barra ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.barra ul li a {
+    margin-right: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.barra li a:hover {
+    color: rgb(103, 236, 103);
+}
+
+.barra li:hover {
+    transform: scale(1.1);
+}
+
+/* ----------- FIN DE BARRA DE NAVEGACION------------ */
+
+/* IMAGEN DEL BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+    filter: contrast(70%);
+}
+
+/* TITULO PRINCIPAL DEL HEADER */
+.bienvenida {
+    color: white;
+    text-align: center;
+    border: 2px solid green;
+    border-width: 10px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(12, 134, 12), rgb(148, 175, 26));
+    transition: all 1.5s ease;
+}
+
+.bienvenida:hover {
+    background-image: linear-gradient(rgb(216, 231, 10), rgb(112, 226, 97));
+    color: black;
+}
+
+/* -----------------FIN DEL HEADER---------------- */
+
+/* ------------------MAIN------------------------- */
+
+/* ------------SECCION 1--------------- */
+.seccion1 {
+    background-color: rgb(121, 224, 224);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+/* TITULO */
+.informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* PARRAFO */
+.primero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-left: 500px;
+    padding-right: 500px;
+    font-size: 25px;
+}
+
+/* BOTON */
+.boton1 {
+    margin-top: 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.boton-mas-informacion {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.boton-mas-informacion:hover {
+    background-color: #0056b3;
+}
+
+/* CONOCENOS.HTML */
+.seccion-1 {
+    background-color: rgb(121, 224, 224);
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/* IMAGEN */
+.historia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.historia img {
+    border-radius: 10px;
+    transition: transform 1.5s ease-in-out;
+}
+
+.historia img:hover {
+    transform: rotate(3deg);
+}
+
+/* PARRAFO */
+.primero1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    padding-left: 500px;
+    padding-right: 500px;
+    font-size: 25px;
+}
+
+.primero1 p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* -------------FIN DE SECCION 1---------------- */
+
+/* -----------------SECCION 2--------------- */
+.seccion2 {
+    background-color: rgb(169, 228, 145);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* TITULO */
+.galeria {
+    color: #505203;
+    margin-bottom: 20px;
+}
+
+/* IMAGENES */
+.seccion2 img {
+    border-radius: 50px;
+}
+
+/* GRILLA */
+.grilla1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* TITULO DE SUPERPOSICION DE IMAGEN */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(2, 47, 133, 0.5);
+    color: #f1f1f1;
+    width: 96.2%;
+    transition: 1s ease;
+    opacity: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/* ARCOS DE LAPA */
+.arcos {
+    position: relative;
+    padding: 10px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.arcos:hover .overlay {
+    opacity: 1;
+}
+
+/* CATEDRAL METROPOLITANA */
+.catedral {
+    position: relative;
+    padding: 10px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.catedral:hover .overlay {
+    opacity: 1;
+}
+
+/* CRISTO REDENTOR */
+.cristo {
+    position: relative;
+    padding: 10px;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.cristo:hover .overlay {
+    opacity: 1;
+}
+
+/* MUSEO DEL MAÑANA */
+.museo {
+    position: relative;
+    padding: 10px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.museo:hover .overlay {
+    opacity: 1;
+}
+
+/* BOTON */
+.boton2 {
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.boton-ver-mas {
+    display: inline-block;
+    background-color: #505203;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.boton-ver-mas:hover {
+    background-color: #353804;
+}
+
+/* GALERIA.HTML */
+
+/* GRILLA */
+.grilla-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* ARCOS DE LAPA */
+.arcos1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.arcos1:hover .overlay {
+    opacity: 1;
+}
+
+/* CATEDRAL METROPOLITANA */
+.catedral1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.catedral1:hover .overlay {
+    opacity: 1;
+}
+
+/* CRISTO REDENTOR */
+.cristo1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.cristo1:hover .overlay {
+    opacity: 1;
+}
+
+/* MUSEO DEL MAÑANA */
+.museo1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.museo1:hover .overlay {
+    opacity: 1;
+}
+
+/* ESCALERA DE SELARÓN */
+.escalera1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.escalera1:hover .overlay {
+    opacity: 1;
+}
+
+/* FEIJOADA */
+.comida1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.comida1:hover .overlay {
+    opacity: 1;
+}
+
+/* PAN DE AZÚCAR */
+.montaña1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.montaña1:hover .overlay {
+    opacity: 1;
+}
+
+/* PLAYA DE IPANEMA */
+.playa1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.playa1:hover .overlay {
+    opacity: 1;
+}
+
+/* CARNAVAL */
+.carnaval1 {
+    position: relative;
+    padding: 10px;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.carnaval1:hover .overlay {
+    opacity: 1;
+}
+
+/* -------------FIN DE SECCION 2---------------- */
+
+/* ---------------SECCION 3-------------- */
+.seccion3 {
+    background-color: rgb(179, 231, 192);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* TITULO */
+.actividades {
+    display: flex;
+    justify-content: center;
+    color: #0a6811;
+}
+
+/* GRILLA */
+.grilla2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: -250px;
+}
+
+/* PRIMERA IMAGEN */
+.trekking {
+    margin-left: 100px;
+    grid-area: 1 / 1 / 2 / 2;
+    margin-right: 20px;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 270px;
+    position: relative;
+}
+
+/* PARRAFO */
+.trekking p {
+    font-size: 25px;
+}
+
+/* TITULO 1 */
+.imagen1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(12, 105, 105);
+    text-decoration: underline;
+}
+
+/* IMAGEN */
+.trekking img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.trekking:hover .overlay1 {
+    transform: scale(1);
+}
+
+/* SEGUNDA IMAGEN */
+.escalada {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 20px;
+    margin-right: 250px;
+    margin-top: 50px;
+    margin-bottom: 270px;
+    position: relative;
+}
+
+/* PARRAFO */
+.escalada p {
+    font-size: 25px;
+}
+
+/* TITULO 2 */
+.imagen2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(12, 105, 105);
+    text-decoration: underline;
+}
+
+/* IMAGEN */
+.escalada img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.escalada:hover .overlay1 {
+    transform: scale(1);
+}
+
+/* ZOOM DE PANTALLA COMPLETA AL PASAR EL CURSOR SOBRE LA IMAGEN */
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #163461;
+    width: 100%;
+    height: 86%;
+    transform: scale(0);
+    transition: 0.5s ease;
+    border-radius: 50px;
+}
+
+/* TITULO Y PARRAFO DE CADA IMAGEN */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* BOTON */
+.boton3 {
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.boton-descubre-mas {
+    display: inline-block;
+    background-color: #0a6811;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.boton-descubre-mas:hover {
+    background-color: #0d3804;
+}
+
+/* ACTIVIDADES.HTML */
+.seccion-3 {
+    background-color: rgb(179, 231, 192);
+    padding-top: 100px;
+}
+
+/* TITULO */
+.actividades {
+    display: flex;
+    justify-content: center;
+    color: #0a6811;
+}
+
+/* GRILLA */
+.grilla-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* TREKKING */
+.trekking1 {
+    margin-left: 100px;
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 70px 10px 90px 100px;
+    position: relative;
+}
+
+/* PARRAFO */
+.trekking1 p {
+    font-size: 30px;
+}
+
+/* TITULO */
+.imagen-a {
+    text-align: center;
+    color: rgb(12, 105, 105);
+    text-decoration: underline;
+}
+
+/* IMAGEN */
+.trekking1 img {
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.trekking1:hover .overlay1 {
+    transform: scale(1);
+}
+
+/* ESCALADA */
+.escalada1 {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 70px 100px 90px 10px;
+    position: relative;
+}
+
+/* PARRAFO */
+.escalada1 p {
+    font-size: 30px;
+}
+
+/* TITULO */
+.imagen-b {
+    text-align: center;
+    color: rgb(12, 105, 105);
+    text-decoration: underline;
+}
+
+/* IMAGEN */
+.escalada1 img {
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.escalada1:hover .overlay1 {
+    transform: scale(1);
+}
+
+/* SURF */
+.surf1 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: -40px 10px 200px 100px;
+    position: relative;
+}
+
+/* PARRAFO */
+.surf1 p {
+    font-size: 30px;
+}
+
+/* TITULO */
+.imagen-c {
+    text-align: center;
+    color: rgb(12, 105, 105);
+    text-decoration: underline;
+}
+
+/* IMAGEN */
+.surf1 img {
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.surf1:hover .overlay1 {
+    transform: scale(1);
+}
+
+/* PARAPENTE */
+.parapente1 {
+    grid-area: 2 / 2 / 3 / 3;
+    margin: -40px 100px 200px 10px;
+    position: relative;
+}
+
+/* PARRAFO */
+.parapente1 p {
+    font-size: 30px;
+}
+
+/* TITULO */
+.imagen-d {
+    text-align: center;
+    color: rgb(12, 105, 105);
+    text-decoration: underline;
+}
+
+/* IMAGEN */
+.parapente1 img {
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.parapente1:hover .overlay1 {
+    transform: scale(1);
+}
+
+/* -------------FIN DE SECCION 3---------------- */
+
+/* -------------SECCION 4------------- */
+.seccion4 {
+    background-color: beige;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* TITULO */
+.sorteo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #067e78;
+}
+
+/* IMAGEN Y TITULO */
+.viaje {
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* IMAGEN */
+.viaje img {
+    border-radius: 10px;
+    filter: sepia(50%);
+}
+
+/* AGITAR LA IMAGEN */
+.viaje img:hover {
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/* TITULO */
+.text-block {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(9, 141, 112);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* BOTON */
+.boton4 {
+    border: none;
+    border-radius: 50px;
+    margin-left: 888px;
+    font-size: 14px;
+}
+
+.boton-detalles {
+    display: inline-block;
+    background-color: #067e78;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.boton-detalles:hover {
+    background-color: #043f4e;
+}
+
+/* SORTEO.HTML */
+
+/* VIDEO */
+.video {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.video iframe {
+    border-radius: 10px;
+}
+
+/* PARRAFO */
+.viaje1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.viaje1 p {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: #067e78;
+    text-decoration-style: wavy;
+    font-size: 27px;
+
+}
+
+/* LISTA */
+.viaje1 ul {
+    list-style-type: square;
+    margin-top: 7px;
+}
+
+.viaje1 li {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+/* BOTON */
+.boton-sorteo {
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-inscribirse {
+    display: inline-block;
+    background-color: #067e78;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.boton-inscribirse:hover {
+    background-color: #043f4e;
+}
+
+/* -------------FIN DE SECCION 4---------------- */
+
+/* ---------------SECCION 5--------------- */
+
+/* TESTIMONIOS */
+.seccion5 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(209, 209, 17);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+/* TITULO */
+.testimonios {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(209, 209, 17);
+    padding-top: 70px;
+}
+
+/* GRILLA */
+.grilla3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* IMAGEN,TITULO Y PARRAFO DE SOFIA */
+.sofia {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+
+.sofia .contenido {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.sofia .contenido p {
+    font-size: 19px;
+}
+
+.sofia img {
+    border-radius: 10px;
+}
+
+.sofia .contenido h3 {
+    margin-bottom: 10px;
+    text-decoration: underline double;
+}
+
+/* IMAGEN,TITULO Y PARRAFO DE ELIANA */
+.eliana {
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eliana .contenido {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.eliana .contenido p {
+    font-size: 19px;
+}
+
+.eliana img {
+    border-radius: 10px;
+}
+
+.eliana .contenido h3 {
+    margin-bottom: 10px;
+    text-decoration: underline double;
+}
+
+/* IMAGEN,TITULO Y PARRAFO DE LEONEL */
+.leonel {
+    grid-area: 2 / 1 / 3 / 2;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+
+.leonel .contenido {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.leonel .contenido p {
+    font-size: 19px;
+}
+
+.leonel img {
+    border-radius: 10px;
+}
+
+.leonel .contenido h3 {
+    margin-bottom: 10px;
+    text-decoration: underline double;
+}
+
+/* IMAGEN,TITULO Y PARRAFO DE PAOLA */
+.paola {
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.paola .contenido {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.paola .contenido p {
+    font-size: 19px;
+}
+
+.paola img {
+    border-radius: 10px;
+}
+
+.paola .contenido h3 {
+    margin-bottom: 10px;
+    text-decoration: underline double;
+}
+
+/* -------------FIN DE SECCION 5---------------- */
+
+/* CONTACTANOS.HTML */
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(214, 214, 157);
+}
+
+/* UBICACION DEL SITIO */
+.parte1 {
+    padding: 20px;
+    background-color: rgb(80, 146, 95);
+    border-radius: 10px;
+}
+
+/* TITULO */
+.titulo1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(16, 224, 86);
+}
+
+/* MAPA */
+.mapa iframe {
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+/* FORMULARIO */
+.parte2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #067e78;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.parte2 form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.parte2 label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(140, 222, 235);
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+input {
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+textarea {
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* TITULO */
+.titulo2 {
+    color: rgb(16, 224, 86);
+    margin-bottom: 35px;
+}
+
+/* BOTON */
+.boton-enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-enviar button {
+    display: inline-block;
+    background-color: rgb(16, 224, 86);
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-enviar button:hover {
+    background-color: rgb(146, 230, 166);
+}
+
+/* ------------------FIN DEL MAIN------------------------- */
+
+/* ---------------FOOTER--------------- */
+.footer1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgb(9, 79, 100), rgb(175, 175, 9));
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* LISTAS */
+.footer1 ul {
+    list-style-type: none;
+}
+
+/* FOTO PROPIA */
+.foto {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.foto img {
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 150px;
+    border: 6px solid white;
+}
+
+/* GRILLA */
+.grilla4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* DATOS PERSONALES */
+.datos-personales {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 50px;
+    color: white;
+}
+
+.datos-personales h4 {
+    margin-bottom: 10px;
+}
+
+/* AYUDA */
+.ayuda {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 50px;
+    color: white;
+}
+
+.ayuda h4 {
+    margin-bottom: 10px;
+}
+
+/* REDES SOCIALES CON SUS ICONOS */
+.redes {
+    grid-area: 1 / 4 / 2 / 5;
+    margin-top: 50px;
+    color: white;
+}
+
+.iconos-redes-sociales {
+    margin-top: 10px;
+}
+
+.iconos-redes-sociales a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.iconos-redes-sociales span {
+    font-size: 30px;
+}
+
+.fa-facebook-square {
+    color: white;
+}
+
+.fa-twitter-square {
+    color: white;
+}
+
+.fa-instagram-square {
+    color: white;
+}
+
+/* ---------------FIN DEL FOOTER--------------- */
